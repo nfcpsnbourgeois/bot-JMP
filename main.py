@@ -8,7 +8,7 @@ from config import BOT_TOKEN, API_KEY, IDS_ALLOWED
 # Définir une fonction de gestionnaire pour la commande /start
 def start(update, context):
     message1 = "<b>Mise en Relation - Premium 💎</b>\n\n" \
-              "➲ <b>La Commande</b> /go vous permet de prendre connaissance des critères pour pouvoir accéder au VIP. 💸\n\n" \
+              "➲ <b>L'envoi de </b>/go vous permet de prendre connaissance des critères pour pouvoir accéder au VIP. 💸\n\n" \
               "➲ VIP permet d'échanger en privé avec nos équipes, ce qui facilite l'accompagnement.\n\n" \
               "<b>FAQ</b> : <a href='https://t.me/leobrgsFx_group'>@leobrgsFx_group</a> 🕵️‍♂️\n" 
 
@@ -20,7 +20,7 @@ def start(update, context):
 def send_second_message(context: CallbackContext):
     chat_id = context.job.context
     message2 =  "🛡️ Chat Sécurisé\n"\
-                "Développé par <a href='https://t.me/leobrgsFx'>l'admin.</a>"
+                "Développé par <a href='https://t.me/leobrgsFx'></a>l'admin."
     context.bot.send_message(chat_id=chat_id, text=message2, parse_mode=ParseMode.HTML)
 
 
