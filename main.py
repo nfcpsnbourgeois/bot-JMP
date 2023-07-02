@@ -20,7 +20,7 @@ def start(update, context):
 def send_second_message(context: CallbackContext):
     chat_id = context.job.context
     message2 =  "🛡️ Chat Sécurisé\n"\
-                "Développé par <a href='https://t.me/leobrgsFx'></a>l'admin."
+                "Développé par <a href='https://t.me/leobrgsFx'>l'admin</a>."
     context.bot.send_message(chat_id=chat_id, text=message2, parse_mode=ParseMode.HTML)
 
 
