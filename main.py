@@ -14,8 +14,8 @@ def start(update, context):
 
     context.bot.send_message(chat_id=update.effective_chat.id, text=message1, parse_mode=ParseMode.HTML)
    
-    # Planifier l'envoi du deuxième message après un délai de 5 secondes
-    context.job_queue.run_once(send_second_message, 5, context=update.effective_chat.id)
+    # Planifier l'envoi du deuxième message après un délai de 8 secondes
+    context.job_queue.run_once(send_second_message, 8, context=update.effective_chat.id)
 
 def send_second_message(context: CallbackContext):
     chat_id = context.job.context
@@ -49,8 +49,8 @@ def go(update, context):
               
     context.bot.send_message(chat_id=update.effective_chat.id, text=message1, parse_mode=ParseMode.HTML)
     
-    # Planifier l'envoi du deuxième message après un délai de 2 secondes
-    context.job_queue.run_once(send_tree_message, 2, context=update.effective_chat.id)
+    # Planifier l'envoi du deuxième message après un délai de 6 secondes
+    context.job_queue.run_once(send_tree_message, 6, context=update.effective_chat.id)
 
 def send_tree_message(context: CallbackContext):
     chat_id = context.job.context
