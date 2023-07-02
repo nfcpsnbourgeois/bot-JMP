@@ -1,0 +1,12 @@
+[Unit]
+Description=Bot Telegram PremiumService
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pro/bot/telegram/bot-JMP/main.py
+Restart=always
+User=pro
+Group=pro
+
+[Install]
+WantedBy=multi-user.target
